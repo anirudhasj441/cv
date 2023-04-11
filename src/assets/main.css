@@ -1,0 +1,265 @@
+@import 'base.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@500&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+.header {
+  /* height: 150px; */
+  width: 100%;
+  /* background-color: var(--color-primary); */
+  /* color: black; */
+}
+
+.name-container {
+  position: relative;
+  color: var(--color-primary);
+}
+
+.name-container::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #dddddd;
+  opacity: 0.5;
+  z-index: -9;
+  clip-path: polygon(0 0, 100% 0%, 90% 99%, 0% 100%);
+}
+.top-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-primary);
+  z-index: -999;
+}
+
+.info-container ul{
+  list-style: none;
+  
+}
+
+#first-icon::after {
+  background-color: var(--color-primary);
+  /* background-color: red; */
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  /* opacity: 0.8; */
+  z-index: -99;
+
+}
+
+#first-icon::before {
+  background-color: #dddddd;
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  opacity: 0.5;
+  z-index: -9;
+}
+
+.info-icon {
+  /* background-color: var(--color-primary); */
+  color: white;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-icon::after {
+  background-color: var(--color-primary);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0.8; */
+  z-index: -999;
+}
+
+.info-icon::before {
+  background-color: #dddddd;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -99;
+}
+
+.info-container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 2.5rem;
+}
+
+.info-container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.inner-ul{
+  list-style: disc !important;
+}
+
+p a{
+  /* text-decoration: none; */
+  color: black !important;
+}
+
+.divider {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primary);
+}
+
+/* #first-icon::after {
+  content: "";
+  background-color: var(--color-primary);
+  position: absolute;
+  width: 100%;
+  top: -200%;
+  bottom: 100%;
+  left: 0;
+} */
+
+.body {
+  height: 100vh !important;
+}
+
+.text-name {
+  font-family: 'Secular One', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.personal-info {
+  width: 100%;
+  min-height: calc(100% - 13rem);
+  position: relative;
+  /* background-color: var(--color-primary); */
+  /* background-color: #dddddd; */
+  /* color: black; */
+}
+
+.personal-info::after {
+  background-color: #dddddd;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -9;
+}
+
+.skills {
+  list-style: none;
+}
+
+.skills li {
+  display: flex;
+  align-items: center;
+}
+
+.skill-icon {
+  border-radius: 50%;
+  border: solid 2px var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  width: 35px;
+  /* background-color: red; */
+  height: 35px;
+}
+
+.experiences {
+  list-style: none;
+}
+
+.experiences>li {
+  display: flex;
+  align-items:  stretch;
+  flex-grow: 1;
+  position: relative;
+}
+
+.experiences>li::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 0.2rem;
+  left: -2rem;
+}
+
+.experiences>li::before {
+  content: "";
+  width: 3px;
+  height: calc(100%);
+  position: absolute;
+  background-color: var(--color-primary);
+  left: calc(-2rem + 6px);
+  top: 15px;
+}
+
+.experiences .bullet::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sub-heading {
+  font-family: 'Helvetica 65 Medium 400', sans-serif;
+  /* font-weight: 700; */
+}
+
+.photo {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: #dddddd solid 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.photo img{
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* aspect-ratio: 1; */
+}

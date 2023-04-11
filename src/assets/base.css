@@ -1,0 +1,6 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-primary: #060047;
+  --color-secondary: #8EA7E9;
+  --color-bg: #F0EEED;
+}
